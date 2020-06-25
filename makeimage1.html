@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二附一心在线制作</title>
+		<link rel="shortcut icon" href="images/logo.png">
+		<link href="scripts/styles.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="scripts/webtitle.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="scripts/FileSaver.min.js"></script>
+	</head>
+	<body>
+		<div class="upall_div">
+			<div class="icon_div">
+				<a href="index.html"><img src="images/icon.png" alt=""/></a>
+			</div>
+			<div class="headtittle_div">
+				<li><a href="index.html">网站主页</a></li>
+				<li><a href="showimage.html">挑选样图</a></li>
+				<li id="now_page"><a href="makeimage1.html">DIY头像</a></li>
+			</div>
+			<div class="else_div">
+				<li><a href="downloadabout.html">关于我们/资源下载</a></li>
+			</div>
+		</div>
+		<div class="midall_div">
+			<div style="margin-top: 5vw;"></div>
+			<div class="button_div">
+				<div class="leftbutton_div">
+					<img src="images/upload.png" id="button_img">
+					<input type="file" name="file" id="change" accept="image/*">
+				</div>
+				<div class="midbutton_div">
+					<img src="images/download.png" id="img_down">
+					<button id="button_down" onclick="download('#myCanvas')"></button>
+				</div>
+				<div class="rightbutton_div">
+					<a href="makeimage1.html"><img src="images/reset.png"></a>
+				</div>
+			</div>
+			<div class="text_div" style="margin-top: 2vw;">
+				微信中无法正常下载，请在<b><u>浏览器</u></b>中打开本页面</br></br>
+				经测试，已知功能正常的浏览器包括：iOS与macOS：<b><u>Safari</u></b></br></br>
+				Windows：<b><u>Google Chrome</u></b>及<b><u>Chrome内核的浏览器</u></b></br></br>
+				Android：<b><u>小米自带浏览器</u></b>，<b><u>华为自带浏览器</u></b></br></br>
+				<a href="screenshot1.html">如您始终无法下载，点<b><u>这里</u></b>！</a></br></br>
+				请上传宽高比<b><u>1:1</u></b>的图片，可能造成图片变形！
+			</div>
+			<div class="text_div" style="margin-top: 1vw;"></div>
+			<div class="draw_div">
+				<canvas id="myCanvas" width="1000" height="1000"></canvas>
+			</div>
+			<div class="text_div" style="margin-top: 5vw;">
+				————————————还是不满意？不妨试一试别的款式！————————————
+			</div>
+			<div class="fourchoice_div">
+				<a href="makeimage2.html"><img src="images/version2.png"></a>
+				<a href="makeimage3.html"><img src="images/version3.png"></a>
+				<a href="makeimage4.html"><img src="images/version4.png"></a>
+				<a href="makeimage5.html"><img src="images/version5.png"></a>
+			</div>
+			<div class="text_div">
+				————————————或者，您也可以直接挑选喜欢的样图！————————————
+			</div>
+			<div class="pic3by3_div">
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version1\14.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version2\34.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version1\18.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version3\20.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\choose.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version3\38.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version5\21.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version4\35.jpg" alt=""/>
+				</a></div>
+				<div class="pic1by3_div">
+					<a href="showimage.html"><img src="images\examples_version5\32.jpg" alt=""/>
+				</a></div>
+			</div>
+		</div>
+		<div class="text_div" style="height: 10vw; margin-top: 2vw;"></div>
+		<script type="text/javascript" src="scripts/pic_version1.js"></script>
+		<div class="downall_div">
+			<img src="images/down.png" usemap="#Map">
+			<map id="Map" name="Map">
+				<area shape="rect" style="outline: none;" coords="215,24,363,39" href="https://www.bnu.edu.cn/">
+				<area shape="rect" style="outline: none;" coords="502,24,650,39" href="http://www.shsbnu.net/cms/832/sdmh/index.shtml">
+				<area shape="rect" style="outline: none;" coords="790,24,938,39" href="https://space.bilibili.com/141443926">
+			</map>
+		</div>
+		<script type="text/javascript" src="scripts/adjustmap.js"></script>
+	</body>
+</html>

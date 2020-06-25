@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二附一心在线制作</title>
+		<link rel="shortcut icon" href="images/logo.png">
+		<link href="scripts/styles.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="scripts/webtitle.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="upall_div">
+			<div class="icon_div">
+				<a href="index.html"><img src="images/icon.png" alt=""/></a>
+			</div>
+			<div class="headtittle_div">
+				<li><a href="index.html">网站主页</a></li>
+				<li><a href="showimage.html">挑选样图</a></li>
+				<li><a href="makeimage1.html">DIY头像</a></li>
+			</div>
+			<div class="else_div">
+				<li><a href="downloadabout.html">关于我们/资源下载</a></li>
+			</div>
+		</div>
+		<div class="midall_div">
+			<div class="declare_div">
+				<h1>版权</h1>
+				本网站由北师大二附中校友开发，旨在为希望使用二附一心头像但缺少素材或有制作困难的朋友
+				提供帮助。本网站在Github开源：https://github.com/Chenrt-ggx/IconCreater&nbsp;(不过前端这
+				种东西也没法不开源...)欢迎交流学习，但<b>请勿将代码用作其它用途</b>。
+				<h1>隐私</h1>
+				本网站的头像合成功能通过HTML5的Canvas标签配合JavaScript实现，我们<b>不会</b>
+				搜集您的使用情况，也<b>不会</b>保存您上传的图片到我们的服务器(因为没有)。
+				<h1>联系我们</h1>
+				邮箱：292677785@qq.com，欢迎贡献优质素材/提出宝贵的意见。
+				<h1>资源下载</h1>
+				<h3><a href="https://pan.baidu.com/s/1at73lcE6sfo2OroLHiqndw" download="">
+					PNG模板打包下载/提取码pp62</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1Ikdae90FConZQGzzfmYw9Q" download="">
+					JPG素材图片打包下载/提取码ov5f</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1Vq3Dpgz1QX2ht2SOpA1P8g" download="">
+					第一种模板JPG样图打包下载/提取码rixw</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1L5L6yIw3NuKL3C8E8P8sfg" download="">
+					第二种模板JPG样图打包下载/提取码h5s6</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1ANeaeZ__l9f_X4Jj9q3QNQ" download="">
+					第三种模板JPG样图打包下载/提取码paq3</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1RvfHYb-AT6VFGiGNm7HmmQ" download="">
+					第四种模板JPG样图打包下载/提取码o7oq</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1aIE30sKFZbezqIz8vaFONA" download="">
+					第五种模板JPG样图打包下载/提取码fvgv</a></h3>
+				<h3><a href="https://pan.baidu.com/s/1B0vXYyeUNBumg3gd-yntnw" download="">
+					小孩子才做选择，我全都要！/提取码7qvv</a></h3>
+				<h1>放松一下</h1>
+			</div>
+			<div class="game_div">
+				<canvas id="stage" style="width: 30vw; height: 45vw;"></canvas>
+			</div>
+			<script type="text/javascript">
+				var stage=document.getElementById('stage')
+				stage.setAttribute("width",400)
+				stage.setAttribute("height",600)
+				$('body').bind('keypress',getKeyCode)
+				function getKeyCode(e)
+				{
+					var evt=e || window.event
+					var keyCode=evt.keyCode || evt.which || evt.charCode
+				}
+			</script>
+		</div>
+		<div class="downall_div">
+			<img src="images/down.png" usemap="#Map">
+			<map id="Map" name="Map">
+				<area shape="rect" style="outline: none;" coords="215,24,363,39" href="https://www.bnu.edu.cn/">
+				<area shape="rect" style="outline: none;" coords="502,24,650,39" href="http://www.shsbnu.net/cms/832/sdmh/index.shtml">
+				<area shape="rect" style="outline: none;" coords="790,24,938,39" href="https://space.bilibili.com/141443926">
+			</map>
+		</div>
+		<script type="text/javascript" src="scripts/adjustmap.js"></script>
+		<script type="text/javascript" src="scripts/game.js"></script>
+	</body>
+</html>

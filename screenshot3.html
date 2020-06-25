@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二附一心在线制作</title>
+		<link rel="shortcut icon" href="images/logo.png">
+		<script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
+		<style type="text/css">
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+			}
+			a:link,a:visited,a:active
+			{
+				text-decoration: none;
+				color: white;
+			}
+			.draw_div
+			{
+				width: 90vw;
+				height: 90vw;
+				margin-left: 4.5vw;
+				margin-top: 2vw;
+				border: 0.5vw solid #282828;
+			}
+			.draw_div canvas
+			{
+				width: 89vw;
+				height: 89vw;
+				margin-left: 0.5vw;
+				margin-top: 0.5vw;
+			}
+			.input_div
+			{
+				width: 80vw;
+				height: 3vw;
+				margin-left: 11vw;
+				margin-top: 3vw;
+				font-size: 0;
+			}
+			.input_div input
+			{
+				display: none;
+			}
+			.input_div button
+			{
+				display: none;
+			}
+			.text
+			{
+				width: 8vw;
+				float: left;
+				height: 2vw;
+				color: #eeeeee;
+				font-size: 1.3vw;
+				line-height: 2vw;
+				text-align: center;
+				margin-left: 13vw;
+				background-color: #282828;
+				border-radius: 0.5vw;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="input_div">
+			<input type="file" name="file" id="change" accept="image/*">
+			<button id="button1" onclick="f1()"></button>
+			<button id="button2" onclick="f2()"></button>
+			<div id="fun1" class="text">选择文件</div>
+			<div id="fun2" class="text">重置图片</div>
+			<div id="fun3" class="text">点击返回</div>
+		</div>
+		<div style="height: 1.6vw;"></div>
+		<div style="height: 4vw; font-size: 1.4vw; line-height: 2vw; text-align: center;">
+			因技术原因，您的浏览器没有被适配，对此我们深表歉意。</br>
+			在这个页面，我们删除了一些样式并调整了画布大小，以便您可以在制作头像后以截屏的方式保存。</br>
+		</div>
+		<div class="draw_div">
+			<canvas id="myCanvas" width="1000" height="1000"></canvas>
+		</div>
+		<div style="height: 14vw;"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){$('#fun1').click(function(){$('#change').click()})})
+			$(document).ready(function(){$('#fun2').click(function(){$('#button1').click()})})
+			$(document).ready(function(){$('#fun3').click(function(){$('#button2').click()})})
+			function f1(){window.location.href="screenshot3.html"}
+			function f2(){window.location.href="makeimage3.html"}
+			var c=document.getElementById('myCanvas')
+			var ctx=c.getContext('2d')
+			var change=document.getElementById('change')
+			var img1=new Image()
+			var img2=new Image()
+			var img3=new Image()
+			img2.src="images/version3.png"
+			img3.src="images/welcome.jpg"
+			change.onchange=function(event)
+			{
+				var file=event.target.files[0]
+				var url=window.URL.createObjectURL(file)
+				img1.src=url
+			}
+			img1.onload=function()
+			{
+				ctx.fillStyle='#282828'
+				ctx.fillRect(0,0,1000,1000)
+				ctx.drawImage(img1,0,0,1000,1000)
+				ctx.drawImage(img2,0,0,1000,1000)
+			}
+			img3.onload=function()
+			{
+				ctx.drawImage(img3,0,0,1000,1000)
+			}
+		</script>
+	</body>
+</html>
