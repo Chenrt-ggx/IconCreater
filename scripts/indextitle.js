@@ -4,7 +4,7 @@ document.addEventListener('visibilitychange',function()
 {
 	if (document.hidden)
 	{
-		document.title='你不要我了么？=7='
+		document.title='2021加油鸭！'
 		clearTimeout(time)
 	}
 	else document.title=origin

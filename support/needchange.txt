@@ -1,3 +1,5 @@
+scripts\indextitle.js
+
 images\version1.png
 images\version2.png
 images\version3.png
