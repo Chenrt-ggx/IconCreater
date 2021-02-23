@@ -7,5 +7,12 @@ document.addEventListener('visibilitychange',function()
 		document.title='你不要我了么？=7='
 		clearTimeout(time)
 	}
-	else document.title=origin
+	else
+	{
+		document.title='我喜欢你啊❤'
+		time=setTimeout(function()
+		{
+			document.title=origin
+		},2000)
+	}
 })
